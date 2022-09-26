@@ -18,6 +18,8 @@ public class AlertExample {
 		driver.get("https://netbanking.hdfcbank.com/netbanking/");
 		driver.manage().window().maximize();
 		driver.switchTo().frame("login_page");
+		
+		
 	
 		 WebDriverWait wait = new WebDriverWait(driver,(1000));
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'CONTINUE')]"))).click();
